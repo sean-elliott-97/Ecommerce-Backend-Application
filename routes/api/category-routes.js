@@ -30,7 +30,7 @@ router.get("/:id", (req, res) => {
       if (!categories) {
         res
           .status(404)
-          .json({ message: "There is no product with the Id you provided" });
+          .json({ message: "There is no category with the Id you provided" });
         return;
       }
       res.status(200).json(categories);
